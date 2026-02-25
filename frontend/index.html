@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calm Chat - A Supportive Companion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Background decorative elements -->
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+            <div class="shape shape-5"></div>
+        </div>
+
+        <!-- Main chat interface -->
+        <div class="chat-wrapper">
+            <!-- Header -->
+            <div class="chat-header">
+                <div class="header-content">
+                    <h1>Calm Chat</h1>
+                    <p>A warm place to share what's on your mind</p>
+                </div>
+            </div>
+
+            <!-- Messages container -->
+            <div class="messages-container" id="messagesContainer">
+                <div class="welcome-message">
+                    <div class="bot-avatar">🌿</div>
+                    <div class="message-bubble bot-message">
+                        <p>Hello, I'm here to listen. Feel free to share whatever's on your mind—no rush, no judgment. What brings you here today?</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Typing indicator -->
+            <div class="typing-indicator" id="typingIndicator" style="display: none;">
+                <div class="bot-avatar">🌿</div>
+                <div class="message-bubble bot-message">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+
+            <!-- Input area -->
+            <div class="chat-footer">
+                <div class="input-wrapper">
+                    <textarea 
+                        id="userInput" 
+                        class="message-input" 
+                        placeholder="Share your thoughts... (Press Ctrl+Enter to send)"
+                        rows="1"
+                    ></textarea>
+                    <button id="sendBtn" class="send-button">
+                        <span>Send</span>
+                        <span class="button-icon">→</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Decorative corner elements -->
+        <div class="decoration left-decoration">
+            <div class="cute-element">🥰</div>
+        </div>
+        <div class="decoration right-decoration">
+            <div class="cute-element">✨</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
