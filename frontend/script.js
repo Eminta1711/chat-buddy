@@ -10,7 +10,7 @@ const sendBtn = document.getElementById('sendBtn');
 const typingIndicator = document.getElementById('typingIndicator');
 
 // Backend API URL
-const BACKEND_URL = 'https://chatbuddy-7i8s.onrender.com';
+const BACKEND_URL = 'http://localhost:5000';
 
 // ========================================
 // EVENT LISTENERS
@@ -119,38 +119,6 @@ function showTypingIndicator() {
 
 function hideTypingIndicator() {
     typingIndicator.style.display = 'none';
-}
-
-// ========================================
-// KEYBOARD SHORTCUTS
-// ========================================
-
-function handleKeyPress(event) {
-    // Ctrl+Enter to send (Windows/Linux)
-    if ((event.ctrlKey || event.metaKey) && event.key === 'Enter') {
-        event.preventDefault();
-        sendMessage();
-    }
-}
-
-// ========================================
-// AUTO-RESIZE TEXTAREA
-// ========================================
-
-function autoResizeTextarea() {
-    userInput.style.height = 'auto';
-    const newHeight = Math.min(userInput.scrollHeight, 120);
-    userInput.style.height = newHeight + 'px';
-}
-
-// ========================================
-// AUTO-SCROLL TO BOTTOM
-// ========================================
-
-function scrollToBottom() {
-    setTimeout(() => {
-        messagesContainer.scrollTop = messagesContainer.scrollHeight;
-    }, 0);
 }
 
 // ========================================
