@@ -166,8 +166,8 @@ def reset_chat():
 # RUN SERVER
 # ---------------------------------
 if __name__ == '__main__':
-    print("🌿 Calm Chat Backend Starting...")
-    print("📍 Server running on http://localhost:8000")
-    print("🌐 Open: http://localhost:8000/frontend/")
+    print("[*] Calm Chat Backend Starting...")
+    print("[*] Server running on http://localhost:5000")
+    print("[*] Open: http://localhost:5000/frontend/")
     print("\nPress Ctrl+C to stop the server.")
-    app.run(debug=True, port=8000)
+    app.run(debug=True, port=5000)

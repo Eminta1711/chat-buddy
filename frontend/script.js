@@ -10,7 +10,7 @@ const sendBtn = document.getElementById('sendBtn');
 const typingIndicator = document.getElementById('typingIndicator');
 
 // Backend API URL
-const BACKEND_URL = 'http://localhost:8000';
+const BACKEND_URL = 'http://localhost:5000';
 
 // ========================================
 // EVENT LISTENERS
